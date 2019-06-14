@@ -15,7 +15,7 @@ let eek = 0 //start with this, if a value is in the json file then it will be re
 fs.readFile('./eek.json','utf8',(err,json) => {
   if(err) {
     console.error(err) // Throws error in console
-    return process.exit(1) // Stops the app if there's an error reading the json file
+    //return process.exit(1) // Stops the app if there's an error reading the json file
   }
   db = JSON.parse(json)
   eek = db['eek']
