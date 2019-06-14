@@ -34,5 +34,5 @@ bot.on('messageCreate',(msg) => {
   fs.writeFile('./eek.json',JSON.stringify(db), (err) => {
     if(err) return console.error(err) // Throws error in console
     console.log('Added a count to "eek", count: '+eek)
-  }
+  })
 })
