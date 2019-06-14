@@ -1,10 +1,10 @@
 const Eris = require('eris')
-const token = 'Put your token here'
+const token = 'NDkzNTMzMTMzODI5MDQ2Mjc0.XQOqJw.Jc1FMwpsNxghx80BwMRHDh5dY6k'
 const bot = Eris.CommandClient(token,{},{
   prefix:'!'// You can change this to whatever you want
 })
 const fs = require('fs')
-const owner = 'Your user ID'
+const owner = '253600545972027394'
 
 bot.on('ready',() => {
   console.log(`Ready! Logged on as ${bot.user.username}#${bot.user.discriminator}`) //Logs ready in the console
