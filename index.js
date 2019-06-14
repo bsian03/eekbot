@@ -36,3 +36,5 @@ bot.on('messageCreate',(msg) => {
     console.log('Added a count to "eek", count: '+eek)
   })
 })
+
+bot.connect()
