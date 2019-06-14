@@ -1,6 +1,6 @@
 const Eris = require('eris')
 const token = 'NDkzNTMzMTMzODI5MDQ2Mjc0.XQOqJw.Jc1FMwpsNxghx80BwMRHDh5dY6k'
-const bot = Eris.CommandClient(token,{},{
+const bot = new Eris.CommandClient(token,{},{
   prefix:'!'// You can change this to whatever you want
 })
 const fs = require('fs')
