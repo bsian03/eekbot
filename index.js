@@ -19,6 +19,7 @@ fs.readFile('./eek.json','utf8',(err,json) => {
   }
   db = JSON.parse(json)
   eek = db['eek']
+  console.log('DB info:\n'+db)
 })
 
 bot.registerCommand('eek',(msg) => {
@@ -34,5 +35,7 @@ bot.on('messageCreate',(msg) => {
   fs.writeFile('./eek.json',JSON.stringify(db), (err) => {
     if(err) return console.error(err) // Throws error in console
     console.log('Added a count to "eek", count: '+eek)
-  }
+  })
 })
+  
+bot.connect() // Connects to Discord - if you don't have this, the bot will just start then stop immediately
