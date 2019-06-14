@@ -8,5 +8,8 @@ hi cynx
   - Click on Bot, then press Add Bot
  - Under Token, press "Copy"
  - In index.js, paste the token where it says token. Also paste your user ID
+ - Click on Oauth
+ - Under Scopes, enable Bot
+ - Select permissions
+ - Copy and paste link into url bar (this is the bot invite link), then add the bot
  - Start the bot by typing in "node index.js"
-Ez
